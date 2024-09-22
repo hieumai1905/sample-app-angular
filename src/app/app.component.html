@@ -188,6 +188,9 @@
 
   <app-show-list-product>
   </app-show-list-product>
+
+  <app-component-interaction [titleOfChild]="title" (newTitleEvent)="changeTitle($event)">
+  </app-component-interaction>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
