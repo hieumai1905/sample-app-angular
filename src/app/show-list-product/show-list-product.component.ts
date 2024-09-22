@@ -1,17 +1,20 @@
 import {Component} from '@angular/core';
 import {Product} from "../product";
 import {NgForOf} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-show-list-product',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    FormsModule
   ],
   templateUrl: './show-list-product.component.html',
   styleUrl: './show-list-product.component.css'
 })
 export class ShowListProductComponent {
+  product: Product = {};
   products: Product[] = [
     {
       name: 'Apple',
@@ -29,4 +32,9 @@ export class ShowListProductComponent {
       description: 'This is an orange'
     }
   ]
+
+  addProduct() {
+    this.products.push(this.product);
+    this.product = {};
+  }
 }
