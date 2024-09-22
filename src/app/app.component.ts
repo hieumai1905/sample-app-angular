@@ -4,11 +4,12 @@ import {FontSizeEditorComponent} from "./font-size-editor/font-size-editor.compo
 import {ShowInfoAnimalComponent} from "./show-info-animal/show-info-animal.component";
 import {ShowListProductComponent} from "./show-list-product/show-list-product.component";
 import {ComponentInteractionComponent} from "./component-interaction/component-interaction.component";
+import {NameCardComponent} from "./name-card/name-card.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FontSizeEditorComponent, ShowInfoAnimalComponent, ShowListProductComponent, ComponentInteractionComponent],
+  imports: [RouterOutlet, FontSizeEditorComponent, ShowInfoAnimalComponent, ShowListProductComponent, ComponentInteractionComponent, NameCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
