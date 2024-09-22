@@ -7,6 +7,7 @@
         <thead class="table-dark">
         <tr>
           <th scope="col">#</th>
+          <th scope="col">Id</th>
           <th scope="col">Name</th>
           <th scope="col">Price</th>
           <th scope="col">Description</th>
@@ -16,10 +17,11 @@
         <tbody>
         <tr *ngFor="let product of products; let i = index">
           <th scope="row">{{ i + 1 }}</th>
-          <td>{{ product.name }}</td>
+          <td>{{ product.id }}</td>
+          <td>{{ product.name | uppercase }}</td>
           <td>{{ product.price }}</td>
           <td>{{ product.description }}</td>
-          <td>{{product.createAt | date }}</td>
+          <td>{{ product.createAt | date | uppercase}}</td>
         </tr>
         </tbody>
       </table>
