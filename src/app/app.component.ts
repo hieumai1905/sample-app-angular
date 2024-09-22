@@ -5,11 +5,12 @@ import {ShowInfoAnimalComponent} from "./show-info-animal/show-info-animal.compo
 import {ShowListProductComponent} from "./show-list-product/show-list-product.component";
 import {ComponentInteractionComponent} from "./component-interaction/component-interaction.component";
 import {NameCardComponent} from "./name-card/name-card.component";
+import {TodoComponent} from "./todo/todo.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FontSizeEditorComponent, ShowInfoAnimalComponent, ShowListProductComponent, ComponentInteractionComponent, NameCardComponent],
+  imports: [RouterOutlet, FontSizeEditorComponent, ShowInfoAnimalComponent, ShowListProductComponent, ComponentInteractionComponent, NameCardComponent, TodoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
