@@ -1,0 +1,19 @@
+<h2>List product</h2>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products; let i = index">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ product.name }}</td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.description }}</td>
+  </tbody>
+</table>
